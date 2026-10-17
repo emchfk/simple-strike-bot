@@ -1,0 +1,23 @@
+site_name: Simple Strike Bot
+site_description: Documentation for simple-strike-bot
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_submodules: true
+            members_order: source
+            show_root_heading: true
+            show_root_full_path: false
+            show_source: false
+            show_docstring_attributes: true
+            show_attribute_values: true    
